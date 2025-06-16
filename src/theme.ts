@@ -1,22 +1,21 @@
 import { createTheme } from "@mui/material/styles";
-import { purple, cyan, grey } from "@mui/material/colors";
 
 export const theme = createTheme({
 	palette: {
 		mode: "light", // or 'dark'
 		primary: {
-			main: purple[500], // main brand color
+			main: "#1976d2",
 		},
 		secondary: {
-			main: cyan[500], // accent color for buttons or highlights
+			main: "#ff4081",
 		},
 		background: {
-			default: grey[50], // background of pages
+			default: "#f9f9f9", // background of pages
 			paper: "#ffffff", // card or modal backgrounds
 		},
 		text: {
-			primary: grey[900], // heading and body text
-			secondary: grey[700], // muted/secondary text
+			primary: "#333333", // heading and body text
+			secondary: "#666666", // muted/secondary text
 		},
 	},
 	typography: {

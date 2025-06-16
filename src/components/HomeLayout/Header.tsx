@@ -4,6 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "react-router";
 import { navLink } from "@/utils/navlink";
 import { useState } from "react";
+import { useTheme } from "@mui/material/styles";
 
 function Header() {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -14,6 +15,7 @@ function Header() {
 	const handleClose = () => {
 		setAnchorEl(null);
 	};
+	const theme = useTheme();
 	return (
 		<div className="border bg-gray-50 max-w-screen-xl mx-auto py-4">
 			<div className="mx-auto flex  justify-between items-center">
@@ -31,7 +33,9 @@ function Header() {
 				<div className="sm:flex justify-items-center items-center gap-x-4 hidden">
 					{navLink.map(link => (
 						<Button variant="text" size="medium">
-							<Link to={link.href} className="capitalize text-base">
+							<Link
+								to={link.href}
+								className="capitalize text-base font-semibold">
 								{link.name}
 							</Link>
 						</Button>
@@ -60,7 +64,12 @@ function Header() {
 							}}>
 							{navLink.map(link => (
 								<MenuItem onClick={handleClose}>
-									<Link to={link.href}>{link.name}</Link>
+									<Link
+										style={{ color: theme.palette.primary.main }}
+										to={link.href}
+										className="capitalize text-base font-semibold">
+										{link.name}
+									</Link>
 								</MenuItem>
 							))}
 						</Menu>
@@ -70,7 +79,8 @@ function Header() {
 						<IconButton>
 							<GitHubIcon
 								sx={{ width: 40, height: 40 }}
-								className="text-gray-900"
+
+								// className="text-gray-900"
 							/>
 						</IconButton>
 					</a>
