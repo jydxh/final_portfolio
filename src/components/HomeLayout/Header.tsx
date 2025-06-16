@@ -17,7 +17,7 @@ function Header() {
 	};
 	const theme = useTheme();
 	return (
-		<div className="border bg-gray-50 max-w-screen-xl mx-auto py-4">
+		<div className=" bg-gray-50 max-w-screen-xl mx-auto py-4">
 			<div className="mx-auto flex  justify-between items-center">
 				{/* logo */}
 
