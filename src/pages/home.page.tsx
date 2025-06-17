@@ -1,5 +1,6 @@
 import HeroImage from "@/components/home/HeroImage";
 import AboutMe from "@/components/home/AboutMe";
+import HomeCarousel from "@/components/home/HomeCarousel";
 
 function HomePage() {
 	return (
@@ -8,6 +9,7 @@ function HomePage() {
 
 			<HeroImage />
 			<AboutMe />
+			<HomeCarousel />
 		</main>
 	);
 }

@@ -3,10 +3,10 @@ import { Link } from "react-router";
 
 function AboutMe() {
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto my-2">
+		<div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto mt-2">
 			{/* avatar image */}
 			<img
-				src="../../../public/haocheng_home_avatar.png"
+				src="/haocheng_home_avatar.png"
 				className="w-full h-[400px] object-cover"
 			/>
 			{/* about me content */}
