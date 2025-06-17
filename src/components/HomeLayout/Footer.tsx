@@ -4,7 +4,7 @@ import { navLink } from "../../utils/navlink";
 
 function Footer() {
 	return (
-		<footer className="py-8 grid place-content-center border bg-linear-to-b from-gray-200  to-slate-300">
+		<footer className="py-8 grid place-content-center  bg-linear-to-b from-gray-200  to-slate-300">
 			<div className="flex flex-col gap-y-4">
 				<Link to={"/"}>
 					<img

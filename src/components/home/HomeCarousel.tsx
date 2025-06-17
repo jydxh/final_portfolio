@@ -12,7 +12,7 @@ import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router";
 function HomeCarousel() {
 	return (
-		<section className="mx-auto w-full bg-gradient-to-b from-gray-100 to-gray-300 mt-2 py-10">
+		<section className="mx-auto w-full bg-gradient-to-b from-gray-100 to-gray-300 mt-2 p-4">
 			<Box
 				sx={{
 					maxWidth: 1080,
