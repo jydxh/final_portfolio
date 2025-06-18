@@ -39,9 +39,7 @@ function HomeCarousel() {
 					autoplay={true}
 					setWrapperSize
 					pagination={{ clickable: true }}
-					scrollbar={{ draggable: true }}
-					onSwiper={swiper => console.log(swiper)}
-					onSlideChange={() => console.log("slide change")}>
+					scrollbar={{ draggable: true }}>
 					{previewImages.map((src, i) => (
 						<SwiperSlide key={i}>
 							<a

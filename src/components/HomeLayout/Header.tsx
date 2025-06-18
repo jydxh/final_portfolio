@@ -1,7 +1,7 @@
 import { Button, Menu, MenuItem, IconButton, Icon } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { navLink } from "@/utils/navlink";
 import { useState } from "react";
 import { useTheme } from "@mui/material/styles";
@@ -16,6 +16,8 @@ function Header() {
 		setAnchorEl(null);
 	};
 	const theme = useTheme();
+	const location = useLocation();
+
 	return (
 		<div className=" bg-gray-50 max-w-screen-xl mx-auto py-4">
 			<div className="mx-auto flex  justify-between items-center">
@@ -31,15 +33,22 @@ function Header() {
 
 				{/* nav links */}
 				<div className="sm:flex justify-items-center items-center gap-x-4 hidden">
-					{navLink.map(link => (
-						<Button variant="text" size="medium">
-							<Link
-								to={link.href}
-								className="capitalize text-base font-semibold">
-								{link.name}
-							</Link>
-						</Button>
-					))}
+					{navLink.map(link => {
+						const isActive = location.pathname === link.href;
+						return (
+							<Button
+								variant="text"
+								size="medium"
+								key={link.href}
+								color={isActive ? "primary" : "inherit"}>
+								<Link
+									to={link.href}
+									className="capitalize text-base font-semibold">
+									{link.name}
+								</Link>
+							</Button>
+						);
+					})}
 				</div>
 
 				<div className="flex items-center gap-4">
@@ -62,16 +71,23 @@ function Header() {
 									"aria-labelledby": "basic-button",
 								},
 							}}>
-							{navLink.map(link => (
-								<MenuItem onClick={handleClose}>
-									<Link
-										style={{ color: theme.palette.primary.main }}
-										to={link.href}
-										className="capitalize text-base font-semibold">
-										{link.name}
-									</Link>
-								</MenuItem>
-							))}
+							{navLink.map(link => {
+								const isActive = location.pathname === link.href;
+								return (
+									<MenuItem onClick={handleClose} key={link.href}>
+										<Link
+											style={{
+												color: isActive
+													? theme.palette.primary.main
+													: "inherit",
+											}}
+											to={link.href}
+											className="capitalize text-base font-semibold">
+											{link.name}
+										</Link>
+									</MenuItem>
+								);
+							})}
 						</Menu>
 					</div>
 					{/* github logo */}

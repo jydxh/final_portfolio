@@ -1,10 +1,11 @@
 import { Button } from "@mui/material";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { navLink } from "../../utils/navlink";
 
 function Footer() {
+	const location = useLocation();
 	return (
-		<footer className="py-8 grid place-content-center  bg-linear-to-b from-gray-200  to-slate-300">
+		<footer className="py-8 grid place-content-center  bg-linear-to-b from-gray-100  to-slate-200">
 			<div className="flex flex-col gap-y-4">
 				<Link to={"/"}>
 					<img
@@ -14,13 +15,19 @@ function Footer() {
 					/>
 				</Link>
 				<div className="flex gap-x-4">
-					{navLink.map(link => (
-						<Button variant="text">
-							<Link to={link.href} className="capitalize">
-								{link.name}
-							</Link>
-						</Button>
-					))}
+					{navLink.map(link => {
+						const isActive = location.pathname === link.href;
+						return (
+							<Button
+								variant="text"
+								key={link.href}
+								color={isActive ? "primary" : "inherit"}>
+								<Link to={link.href} className="capitalize">
+									{link.name}
+								</Link>
+							</Button>
+						);
+					})}
 				</div>
 
 				<div className="flex flex-col justify-center items-center gap-y-4">
