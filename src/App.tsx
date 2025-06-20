@@ -5,6 +5,7 @@ import Contact from "./pages/contact.page";
 import PortfolioPage from "./pages/portfolio.page";
 import HomeLayout from "./pages/home_layout";
 import SubLayout from "./pages/SubLayout";
+import NotFoundPage from "./pages/notfound.page";
 
 export default function App() {
 	return (
@@ -16,6 +17,7 @@ export default function App() {
 					<Route path="contact" element={<Contact />} />
 					<Route path="portfolio" element={<PortfolioPage />} />
 				</Route>
+				<Route path="*" element={<NotFoundPage />} />
 			</Route>
 		</Routes>
 	);
