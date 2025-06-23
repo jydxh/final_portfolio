@@ -9,7 +9,9 @@ function PortfolioWrapper({
 	previewImages,
 	youtubeId,
 	projectName,
+	disabledLink = false,
 }: {
+	disabledLink?: boolean;
 	children: ReactNode;
 	previewImages: PreviewImages;
 	youtubeId: string;
@@ -23,7 +25,10 @@ function PortfolioWrapper({
 			<div className="grid grid-cols-1  mt-10 gap-10">
 				{/* carousel */}
 				<div>
-					<PortfolioCarousel previewImages={previewImages} />
+					<PortfolioCarousel
+						previewImages={previewImages}
+						disabledLink={disabledLink}
+					/>
 				</div>
 				{/* project description */}
 				<div className="max-w-screen-lg mx-auto">{children}</div>

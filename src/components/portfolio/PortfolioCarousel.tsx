@@ -18,8 +18,10 @@ export type PreviewImages = {
 
 function PortfolioCarousel({
 	previewImages,
+	disabledLink,
 }: {
 	previewImages: PreviewImages;
+	disabledLink: boolean;
 }) {
 	return (
 		<div className="mx-auto w-full mt-2 p-4">
@@ -43,19 +45,27 @@ function PortfolioCarousel({
 					scrollbar={{ draggable: true }}>
 					{previewImages.map((image, i) => (
 						<SwiperSlide key={i}>
-							<a
-								href={
-									image.name.startsWith("TMDB")
-										? "https://movie-hub-v1.onrender.com"
-										: "https://haochengportfolio.com"
-								}
-								target="_blank">
+							{!disabledLink ? (
+								<a
+									href={
+										image.name.startsWith("TMDB")
+											? "https://movie-hub-v1.onrender.com"
+											: "https://haochengportfolio.com"
+									}
+									target="_blank">
+									<img
+										src={image.src}
+										alt="portfolio preview"
+										className="object-contain w-full max-h-[600px] mb-10"
+									/>
+								</a>
+							) : (
 								<img
 									src={image.src}
 									alt="portfolio preview"
 									className="object-contain w-full max-h-[600px] mb-10"
 								/>
-							</a>
+							)}
 						</SwiperSlide>
 					))}
 				</Swiper>

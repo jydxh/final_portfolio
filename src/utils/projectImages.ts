@@ -15,6 +15,17 @@ import TMDB_MOVIE_TRAILER from "../assets/TMDB_movie_trailer.png";
 import TMDB_PEOPLE_DETAIL from "../assets/TMDB_people_details.png";
 import TMDB_PEOPLE_LIST from "../assets/TMDB_people_list.png";
 
+import RN_HOME from "../assets/Rn_home_page.jpg";
+import RN_PRODUCT_DETAIL from "../assets/RN_product_detail.jpg";
+import RN_PRODUCT_MAP from "../assets/RN_product_map.jpg";
+import RN_BOOKING_CALENDAR from "../assets/RN_booking_calendar.jpg";
+import RN_PRODUCT_REVIEW from "../assets/RN_product_review.jpg";
+import RN_FAV_LIST from "../assets/RN_fav_list.jpg";
+import RN_ORDER_LIST from "../assets/RN_order_list.jpg";
+import RN_ORDER_DETAIL from "../assets/RN_order_detail.jpg";
+import RN_LOGIN from "../assets/RN_login.jpg";
+import RN_ACCOUNT from "../assets/RN_account.jpg";
+
 export const projectImages = {
 	HomeBook: [
 		{
@@ -94,6 +105,58 @@ export const projectImages = {
 			src: TMDB_PEOPLE_LIST,
 			name: "TMDB_PEOPLE_LIST",
 			alt: "tmdb people list",
+		},
+	],
+	RN: [
+		{
+			src: RN_HOME,
+			name: "RN_HOME",
+			alt: "rn home",
+		},
+		{
+			src: RN_PRODUCT_DETAIL,
+			name: "RN_PRODUCT_DETAIL",
+			alt: "rn product detail",
+		},
+		{
+			src: RN_PRODUCT_MAP,
+			name: "RN_PRODUCT_MAP",
+			alt: "rn product map",
+		},
+		{
+			src: RN_BOOKING_CALENDAR,
+			name: "RN_BOOKING_CALENDAR",
+			alt: "rn booking calendar",
+		},
+		{
+			src: RN_PRODUCT_REVIEW,
+			name: "RN_PRODUCT_REVIEW",
+			alt: "rn product review",
+		},
+		{
+			src: RN_FAV_LIST,
+			name: "RN_FAV_LIST",
+			alt: "rn favorite list",
+		},
+		{
+			src: RN_ORDER_LIST,
+			name: "RN_ORDER_LIST",
+			alt: "rn order list",
+		},
+		{
+			src: RN_ORDER_DETAIL,
+			name: "RN_ORDER_DETAIL",
+			alt: "rn order detail",
+		},
+		{
+			src: RN_LOGIN,
+			name: "RN_LOGIN",
+			alt: "rn login",
+		},
+		{
+			src: RN_ACCOUNT,
+			name: "RN_ACCOUNT",
+			alt: "rn account",
 		},
 	],
 };

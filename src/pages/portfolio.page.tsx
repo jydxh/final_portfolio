@@ -16,7 +16,7 @@ function PortfolioPage() {
 						<Typography variant="h3" sx={{ mb: 4 }}>
 							Technical Stack
 						</Typography>
-						<ul className="">
+						<ul>
 							<li>
 								• <strong>Next.js</strong> - Core framework for building
 								interactive user interfaces, and SEO-friendly web app using
@@ -127,6 +127,43 @@ function PortfolioPage() {
 				</PortfolioWrapper>
 			</section>
 			{/* todo: homebook RN  */}
+			<section className="bg-gradient-to-b from-zic-200 to-slate-300 mx-auto">
+				<PortfolioWrapper
+					disabledLink={true}
+					projectName="Home Book (React Native frontend)"
+					previewImages={projectImages.RN}
+					youtubeId="0KBtZfDIE_Q">
+					<div className="mx-auto">
+						<Typography variant="h3" sx={{ mb: 4 }}>
+							Technical Stack
+						</Typography>
+						<ul>
+							<li>
+								• <strong>React Native</strong> - Core frameworks for building a
+								cross-platform native app while using a single codebase
+							</li>
+							<li>
+								• <strong>Expo</strong> - Speeds up the developing environment
+								set up and provides more convenient tools developing
+							</li>
+							<li>
+								• <strong>Clerk</strong> - Handles frontend authentication and
+								integrates seamlessly with the backend API route
+							</li>
+							<li>
+								• <strong>Tanstack Query</strong> - Manages communication with
+								backend, data caching, optimal UI updates
+							</li>
+						</ul>
+						<article>
+							<Typography variant="h3" sx={{ my: 4 }}>
+								Description
+							</Typography>
+							<p>the decription of the RN homebook, in developing...</p>
+						</article>
+					</div>
+				</PortfolioWrapper>
+			</section>
 
 			{/* TMDB */}
 			<section className="bg-gradient-to-b from-slate-300 to-gray-200 mx-auto">
