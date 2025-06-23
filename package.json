@@ -1,33 +1,37 @@
 {
-  "name": "material-ui-vite-ts",
-  "private": true,
-  "version": "7.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^7.1.1",
-    "@mui/material": "^7.1.1",
-    "@tailwindcss/vite": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-icons": "^5.5.0",
-    "react-router": "^7.6.2",
-    "swiper": "^11.2.8",
-    "tailwindcss": "latest"
-  },
-  "devDependencies": {
-    "@types/node": "^24.0.1",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@vitejs/plugin-react": "latest",
-    "typescript": "latest",
-    "vite": "latest"
-  }
+	"homepage": "https://jydxh.github.io/final_portfolio",
+	"name": "final_portfolio",
+	"private": true,
+	"version": "7.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.0",
+		"@mui/icons-material": "^7.1.1",
+		"@mui/material": "^7.1.1",
+		"@tailwindcss/vite": "latest",
+		"react": "latest",
+		"react-dom": "latest",
+		"react-icons": "^5.5.0",
+		"react-router": "^7.6.2",
+		"swiper": "^11.2.8",
+		"tailwindcss": "latest"
+	},
+	"devDependencies": {
+		"@types/node": "^24.0.1",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"@vitejs/plugin-react": "latest",
+		"gh-pages": "^6.3.0",
+		"typescript": "latest",
+		"vite": "latest"
+	}
 }

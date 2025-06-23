@@ -1,7 +1,5 @@
-import React from "react";
-
 function Contact() {
-	return <div>Contact</div>;
+	return <div>developing....</div>;
 }
 
 export default Contact;

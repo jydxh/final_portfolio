@@ -1,4 +1,4 @@
-import { Button, Menu, MenuItem, IconButton, Icon } from "@mui/material";
+import { Button, Menu, MenuItem, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link, useLocation } from "react-router";
@@ -25,7 +25,7 @@ function Header() {
 
 				<Link to={"/"} className="flex gap-x-2 items-center">
 					<img
-						src="../../../public/haocheng_logo.png"
+						src="/final_portfolio/haocheng_logo.png"
 						className="w-[70px] h-[70px]"
 					/>
 					<p className="font-bold">Haocheng Qiu</p>

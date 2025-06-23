@@ -23,7 +23,7 @@ function SubLayout() {
 					style={{
 						position: "absolute",
 						inset: 0,
-						backgroundImage: 'url("/home_hero.jpg")',
+						backgroundImage: 'url("/final_portfolio/home_hero.jpg")',
 						backgroundSize: "fit",
 						backgroundPosition: "center",
 						filter: "blur(0.1px)",

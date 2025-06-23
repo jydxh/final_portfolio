@@ -92,9 +92,9 @@ function About() {
 									interfaces and single-page applications
 								</li>
 								<li>
-									• Skilled in building cross-platform native apps using React
-									Native and Expo, streamlining development for both iOS and
-									Android platforms.
+									• Skilled in building cross-platform native apps using{" "}
+									<strong>React Native </strong> and <strong>Expo</strong>,
+									streamlining development for both iOS and Android platforms.
 								</li>
 							</ul>
 						</div>

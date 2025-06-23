@@ -13,7 +13,7 @@ function HeroImage() {
 				style={{
 					position: "absolute",
 					inset: 0,
-					backgroundImage: 'url("/home_hero.jpg")',
+					backgroundImage: 'url("/final_portfolio/home_hero.jpg")',
 					backgroundSize: "fit",
 					backgroundPosition: "0 -550px",
 					filter: "blur(0.1px)",

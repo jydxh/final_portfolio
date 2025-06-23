@@ -1,21 +1,19 @@
 import { Button, Typography } from "@mui/material";
 import { Link } from "react-router";
+import avatar from "../../../public/haocheng_home_avatar.png";
 
 function AboutMe() {
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto mt-2">
 			{/* avatar image */}
-			<img
-				src="/haocheng_home_avatar.png"
-				className="w-full h-[400px] object-cover"
-			/>
+			<img src={avatar} className="w-full h-[400px] object-cover" />
 			{/* about me content */}
 			<div className="relative w-full h-[400px] grid place-content-center">
 				<div
 					style={{
 						position: "absolute",
 						inset: 0,
-						backgroundImage: 'url("/home_hero.jpg")',
+						backgroundImage: 'url("/final_portfolio/home_hero.jpg")',
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 						filter: "blur(4px)",

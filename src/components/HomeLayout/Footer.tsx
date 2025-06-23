@@ -9,7 +9,7 @@ function Footer() {
 			<div className="flex flex-col gap-y-4">
 				<Link to={"/"}>
 					<img
-						src="/haocheng_logo.png"
+						src="/final_portfolio/haocheng_logo.png"
 						alt="logo"
 						className="w-[100px] h-[100px] hover:scale-110 duration-300 mx-auto"
 					/>

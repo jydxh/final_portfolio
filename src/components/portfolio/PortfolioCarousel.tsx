@@ -7,9 +7,8 @@ import {
 	Autoplay,
 } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-//import { previewImages } from "@/utils/previewImages";
-import { Box, Button, Typography } from "@mui/material";
-import { Link } from "react-router";
+
+import { Box, Typography } from "@mui/material";
 
 export type PreviewImages = {
 	src: string;
