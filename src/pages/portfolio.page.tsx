@@ -7,16 +7,16 @@ function PortfolioPage() {
 	return (
 		<main className="mx-auto">
 			{/* homebook next.js */}
-			<section className="bg-gradient-to-b from-gray-200 to-zinc-300">
+			<section className="bg-gradient-to-b from-gray-200 to-zinc-300 mx-auto">
 				<PortfolioWrapper
 					projectName="Home Book"
 					previewImages={projectImages.HomeBook}
-					youtubeId="/acVz44Te2uw">
-					<div>
+					youtubeId="acVz44Te2uw">
+					<div className="mx-auto ">
 						<Typography variant="h3" sx={{ mb: 4 }}>
 							Technical Stack
 						</Typography>
-						<ul>
+						<ul className="">
 							<li>
 								• <strong>Next.js</strong> - Core framework for building
 								interactive user interfaces, and SEO-friendly web app using
@@ -51,7 +51,7 @@ function PortfolioPage() {
 								maps for location-based features within the application
 							</li>
 						</ul>
-						<article>
+						<article className="">
 							<Typography variant="h3" sx={{ my: 4 }}>
 								Description
 							</Typography>
@@ -106,16 +106,18 @@ function PortfolioPage() {
 						<Typography variant="h3" sx={{ my: 4 }}>
 							GitHub Repo
 						</Typography>
-						<div className="flex justify-start items-center gap-10">
-							<a
-								href="https://github.com/jydxh/homebook"
-								target="_blank"
-								className="underline">
-								https://github.com/jydxh/homebook
-							</a>
+						<div className="flex flex-col justify-center items-center md:flex-row  md:justify-between md:items-center gap-6">
+							<Button
+								variant="outlined"
+								sx={{ textTransform: "capitalize", width: "100%" }}>
+								<a href="https://github.com/jydxh/homebook" target="_blank">
+									View the Repository
+								</a>
+							</Button>
+
 							<Button
 								variant={"contained"}
-								sx={{ textTransform: "capitalize", width: "50%" }}>
+								sx={{ textTransform: "capitalize", width: "100%" }}>
 								<a href="https://haochengportfolio.com/" target="_blank">
 									View the Project
 								</a>
@@ -127,17 +129,18 @@ function PortfolioPage() {
 			{/* todo: homebook RN  */}
 
 			{/* TMDB */}
-			<section className="bg-gradient-to-b from-slate-300 to-gray-200">
+			<section className="bg-gradient-to-b from-slate-300 to-gray-200 mx-auto">
 				<PortfolioWrapper
 					previewImages={projectImages.TMDB}
 					projectName="The Movie Database"
 					youtubeId="OAkHqqx23cA">
-					<div>
+					<div className="mx-auto">
 						<Typography variant="h3" sx={{ mb: 4 }}>
 							Technical Stack
 						</Typography>
-						<p className="font-semibold text-lg mb-4">Frontend:</p>
+
 						<ul className="mb-4">
+							<li className="font-semibold text-lg mb-4">Frontend:</li>
 							<li>
 								• <strong>React</strong> - Core library for building interactive
 								user interfaces
@@ -158,9 +161,8 @@ function PortfolioPage() {
 								• <strong>Material UI (MUI)</strong> - Component library for
 								consistent design and accessibility
 							</li>
-						</ul>
-						<p className="font-semibold text-lg mb-4">Backend:</p>
-						<ul>
+
+							<li className="font-semibold text-lg my-4">Backend:</li>
 							<li>
 								• <strong>Node.js</strong> - A runtime environment for scalable
 								server-side applications
@@ -178,7 +180,7 @@ function PortfolioPage() {
 								for MongoDB and Node.js
 							</li>
 						</ul>
-						<article>
+						<article className="">
 							<Typography variant="h3" sx={{ my: 4 }}>
 								Description
 							</Typography>
@@ -208,16 +210,20 @@ function PortfolioPage() {
 						<Typography variant="h3" sx={{ my: 4 }}>
 							GitHub Repo
 						</Typography>
-						<div className="flex justify-start items-center gap-10">
-							<a
-								href="https://github.com/jydxh/movie_hub_v2_full_stack"
-								target="_blank"
-								className="underline">
-								https://github.com/jydxh/movie_hub_v2_full_stack
-							</a>
+						<div className="flex flex-col md:flex-row md:justify-start md:items-center gap-6 ">
+							<Button
+								variant="outlined"
+								sx={{ textTransform: "capitalize", width: "100%" }}
+								className="w-[50%]">
+								<a
+									href="https://github.com/jydxh/movie_hub_v2_full_stack"
+									target="_blank">
+									View the Repository
+								</a>
+							</Button>
 							<Button
 								variant={"contained"}
-								sx={{ textTransform: "capitalize", width: "50%" }}>
+								sx={{ textTransform: "capitalize", width: "100%" }}>
 								<a href="https://movie-hub-v1.onrender.com/" target="_blank">
 									View the Project
 								</a>

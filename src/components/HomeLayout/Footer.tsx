@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { Link, useLocation } from "react-router";
 import { navLink } from "../../utils/navlink";
-
+import logo from "../../../public/haocheng_logo.png";
 function Footer() {
 	const location = useLocation();
 	return (
@@ -9,7 +9,7 @@ function Footer() {
 			<div className="flex flex-col gap-y-4">
 				<Link to={"/"}>
 					<img
-						src="/final_portfolio/haocheng_logo.png"
+						src={logo}
 						alt="logo"
 						className="w-[100px] h-[100px] hover:scale-110 duration-300 mx-auto"
 					/>

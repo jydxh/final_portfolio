@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router";
 import { navLink } from "@/utils/navlink";
 import { useState } from "react";
 import { useTheme } from "@mui/material/styles";
+import logo from "../../../public/haocheng_logo.png";
 
 function Header() {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -24,10 +25,7 @@ function Header() {
 				{/* logo */}
 
 				<Link to={"/"} className="flex gap-x-2 items-center">
-					<img
-						src="/final_portfolio/haocheng_logo.png"
-						className="w-[70px] h-[70px]"
-					/>
+					<img src={logo} className="w-[70px] h-[70px]" />
 					<p className="font-bold">Haocheng Qiu</p>
 				</Link>
 
