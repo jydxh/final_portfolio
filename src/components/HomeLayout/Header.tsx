@@ -91,11 +91,7 @@ function Header() {
 					{/* github logo */}
 					<a href="https://github.com/jydxh" target="_blank">
 						<IconButton>
-							<GitHubIcon
-								sx={{ width: 40, height: 40 }}
-
-								// className="text-gray-900"
-							/>
+							<GitHubIcon sx={{ width: 40, height: 40 }} />
 						</IconButton>
 					</a>
 				</div>

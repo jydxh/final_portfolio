@@ -68,7 +68,7 @@ function PortfolioPage() {
 							<p className="mb-4">
 								The API Routes also expose multiple endpoints for the{" "}
 								<strong>native app</strong>, while reusing server-side business
-								logic, streamlining development and improving the productivity.
+								logic, streamlining development and improving productivity.
 							</p>
 							<p className="mb-4">
 								The app implements <strong>role-based route protection</strong>.
@@ -110,7 +110,10 @@ function PortfolioPage() {
 							<Button
 								variant="outlined"
 								sx={{ textTransform: "capitalize", width: "100%" }}>
-								<a href="https://github.com/jydxh/homebook" target="_blank">
+								<a
+									href="https://github.com/jydxh/homebook"
+									target="_blank"
+									className="w-full">
 									View the Repository
 								</a>
 							</Button>
@@ -118,7 +121,10 @@ function PortfolioPage() {
 							<Button
 								variant={"contained"}
 								sx={{ textTransform: "capitalize", width: "100%" }}>
-								<a href="https://haochengportfolio.com/" target="_blank">
+								<a
+									href="https://haochengportfolio.com/"
+									target="_blank"
+									className="w-full">
 									View the Project
 								</a>
 							</Button>
@@ -126,11 +132,11 @@ function PortfolioPage() {
 					</div>
 				</PortfolioWrapper>
 			</section>
-			{/* todo: homebook RN  */}
+			{/* homebook RN  */}
 			<section className="bg-gradient-to-b from-zic-200 to-slate-300 mx-auto">
 				<PortfolioWrapper
 					disabledLink={true}
-					projectName="Home Book (React Native frontend)"
+					projectName="Home Book (React Native Frontend)"
 					previewImages={projectImages.RN}
 					youtubeId="0KBtZfDIE_Q">
 					<div className="mx-auto">
@@ -143,8 +149,8 @@ function PortfolioPage() {
 								cross-platform native app while using a single codebase
 							</li>
 							<li>
-								• <strong>Expo</strong> - Speeds up the developing environment
-								set up and provides more convenient tools developing
+								• <strong>Expo</strong> - Speeds up the development environment
+								set up and provides more convenient tools for development
 							</li>
 							<li>
 								• <strong>Clerk</strong> - Handles frontend authentication and
@@ -152,15 +158,53 @@ function PortfolioPage() {
 							</li>
 							<li>
 								• <strong>Tanstack Query</strong> - Manages communication with
-								backend, data caching, optimal UI updates
+								the backend, data caching, and optimistic UI updates
 							</li>
 						</ul>
 						<article>
 							<Typography variant="h3" sx={{ my: 4 }}>
 								Description
 							</Typography>
-							<p>the decription of the RN homebook, in developing...</p>
+							<p className="mb-4">
+								The native app is built to extend the{" "}
+								<a
+									href="https://haochengportfolio.com/"
+									target="_blank"
+									className="underline">
+									Home Book Next.js full-stack web application
+								</a>{" "}
+								by consuming its API Routes and reusing the same database and
+								business logic. All user-facing functionalities available in the
+								Next.js app have been fully migrated to this React Native
+								application. This ensures a seamless cross-platform experience,
+								allowing users to book products on the native app and later view
+								their orders on the web app, and vice versa.
+							</p>
+							<p className="mb-4">
+								<strong>Clerk</strong> handles authentication and integration
+								with the backend to support both demo user login and standard
+								login flow.
+							</p>
+							<p className="mb-4">
+								<strong>Nativewind</strong> enables consistent UI styling and
+								faster development.
+							</p>
 						</article>
+						<Typography variant="h3" sx={{ my: 4 }}>
+							GitHub Repo
+						</Typography>
+						<div className="flex flex-col justify-center items-center md:flex-row  md:justify-between md:items-center gap-6">
+							<Button
+								variant="contained"
+								sx={{ textTransform: "capitalize", width: "50%" }}>
+								<a
+									href="https://github.com/jydxh/home_book_RN"
+									target="_blank"
+									className="w-full">
+									View the Repository
+								</a>
+							</Button>
+						</div>
 					</div>
 				</PortfolioWrapper>
 			</section>
@@ -254,14 +298,80 @@ function PortfolioPage() {
 								className="w-[50%]">
 								<a
 									href="https://github.com/jydxh/movie_hub_v2_full_stack"
-									target="_blank">
+									target="_blank"
+									className="w-full">
 									View the Repository
 								</a>
 							</Button>
 							<Button
 								variant={"contained"}
 								sx={{ textTransform: "capitalize", width: "100%" }}>
-								<a href="https://movie-hub-v1.onrender.com/" target="_blank">
+								<a
+									href="https://movie-hub-v1.onrender.com/"
+									target="_blank"
+									className="w-full">
+									View the Project
+								</a>
+							</Button>
+						</div>
+					</div>
+				</PortfolioWrapper>
+			</section>
+
+			{/* Sushi Star */}
+			<section className="bg-gradient-to-b from-gray-200 to-zinc-300">
+				<PortfolioWrapper
+					previewImages={projectImages.TMDB}
+					projectName="The Movie Database"
+					youtubeId="_ZsUoMr7maU">
+					<div className="mx-auto w-full">
+						<Typography variant="h3" sx={{ mb: 4 }}>
+							Technical Stack
+						</Typography>
+						<ul className="mb-4 flex flex-col justify-start">
+							<li className="font-semibold">• HTML</li>
+							<li className="font-semibold">• CSS</li>
+							<li className="font-semibold">• JavaScript</li>
+							<li className="font-semibold">• jQuery</li>
+						</ul>
+						<article>
+							<Typography variant="h3" sx={{ my: 4 }}>
+								Description
+							</Typography>
+							<p className="mb-4">
+								This project is built using HTML, CSS, JavaScript, and jQuery.
+								The home page dynamically fetches data from{" "}
+								<strong>Google Firebase</strong>, ensuring real-time updates and
+								responsiveness.
+							</p>
+							<p>
+								The menu display and order total calculation are rendered
+								dynamically using JavaScript, allowing for a smooth and
+								interactive user experience.
+							</p>
+						</article>
+						<Typography variant="h3" sx={{ my: 4 }}>
+							GitHub Repo
+						</Typography>
+						<div className="flex flex-col md:flex-row md:justify-start md:items-center gap-6 ">
+							<Button
+								variant="outlined"
+								sx={{ textTransform: "capitalize", width: "100%" }}
+								className="w-[50%]">
+								<a
+									href="https://github.com/jydxh/sushistar"
+									target="_blank"
+									className="w-full">
+									View the Repository
+								</a>
+							</Button>
+							<Button
+								variant={"contained"}
+								sx={{ textTransform: "capitalize", width: "100%" }}>
+								<a
+									href="https://jydxh.github.io/sushistar/"
+									target="_blank"
+									className="w-full">
 									View the Project
 								</a>
 							</Button>

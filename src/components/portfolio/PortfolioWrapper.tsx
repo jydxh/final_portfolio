@@ -31,7 +31,7 @@ function PortfolioWrapper({
 					/>
 				</div>
 				{/* project description */}
-				<div className="max-w-screen-lg mx-auto">{children}</div>
+				<div className="max-w-screen-lg mx-auto w-full">{children}</div>
 
 				{/* demo video */}
 				<div className="flex justify-center items-center">
