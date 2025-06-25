@@ -50,7 +50,9 @@ function PortfolioCarousel({
 									href={
 										image.name.startsWith("TMDB")
 											? "https://movie-hub-v1.onrender.com"
-											: "https://haochengportfolio.com"
+											: image.name.startsWith("HOMEBOOK")
+											? "https://haochengportfolio.com"
+											: "https://jydxh.github.io/sushistar/"
 									}
 									target="_blank">
 									<img

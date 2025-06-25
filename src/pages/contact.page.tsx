@@ -1,5 +1,11 @@
+import HomeContact from "@/components/home/HomeContact";
+
 function Contact() {
-	return <div>developing....</div>;
+	return (
+		<>
+			<HomeContact />
+		</>
+	);
 }
 
 export default Contact;

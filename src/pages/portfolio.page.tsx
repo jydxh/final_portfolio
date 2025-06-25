@@ -321,8 +321,8 @@ function PortfolioPage() {
 			{/* Sushi Star */}
 			<section className="bg-gradient-to-b from-gray-200 to-zinc-300">
 				<PortfolioWrapper
-					previewImages={projectImages.TMDB}
-					projectName="The Movie Database"
+					previewImages={projectImages.SUSHI_STAR}
+					projectName="Sushi Star"
 					youtubeId="_ZsUoMr7maU">
 					<div className="mx-auto w-full">
 						<Typography variant="h3" sx={{ mb: 4 }}>

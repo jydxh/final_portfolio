@@ -26,6 +26,11 @@ import RN_ORDER_DETAIL from "../assets/RN_order_detail.jpg";
 import RN_LOGIN from "../assets/RN_login.jpg";
 import RN_ACCOUNT from "../assets/RN_account.jpg";
 
+import SUSHI_HOME from "../assets/sushi_home.png";
+import SUSHI_HOME2 from "../assets/sushi_home_2.png";
+import SUSHI_CART from "../assets/sushi_cart.png";
+import SUSHI_ORDER from "../assets/sushi_order.png";
+
 export const projectImages = {
 	HomeBook: [
 		{
@@ -157,6 +162,28 @@ export const projectImages = {
 			src: RN_ACCOUNT,
 			name: "RN_ACCOUNT",
 			alt: "rn account",
+		},
+	],
+	SUSHI_STAR: [
+		{
+			src: SUSHI_HOME,
+			name: "SUSHI_HOME",
+			alt: "sushi home",
+		},
+		{
+			src: SUSHI_HOME2,
+			name: "SUSHI_HOME2",
+			alt: "sushi home 2",
+		},
+		{
+			src: SUSHI_CART,
+			name: "SUSHI_CART",
+			alt: "sushi cart",
+		},
+		{
+			src: SUSHI_ORDER,
+			name: "SUSHI_ORDER",
+			alt: "sushi order",
 		},
 	],
 };

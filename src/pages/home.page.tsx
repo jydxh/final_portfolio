@@ -6,7 +6,7 @@ import HomeContact from "@/components/home/HomeContact";
 
 function HomePage() {
 	return (
-		<main className="mx-auto ">
+		<main className="mx-auto">
 			{/* Hero Image with  brief introduction*/}
 
 			<HeroImage />
